@@ -1,0 +1,254 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "TitlingGothicFB Comp", sans-serif;
+}
+
+/* Content Padding (Excluding Backgrounds) */
+.content-wrapper {
+    padding: 0 10%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-family: Quicksand, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Hide menu icon on desktop */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Show menu on mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* Section Headings */
+h2 {
+    font-family: "TitlingGothicFB Comp", sans-serif;
+    font-weight: 500;
+    color: rgb(174, 35, 41);
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-overlay h1 {
+    font-size: 96px;
+    color: rgb(213, 213, 213);
+}
+
+.home-overlay button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Navigation Section */
+#quick-nav {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.quick-links a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(205, 203, 203);
+}
+.section3{
+    background: url("./image/l1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* About Us */
+#about {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-overlay {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Products Section */
+#products {
+    display: flex;
+    height: 50vh;
+    background: url("./image/banner1.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.product-overlay {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+#pipe-standards{
+    margin-top: 120px;
+}
+/* Contact Section */
+#contact {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url("./image/download.jpg") no-repeat center center/cover;
+}
+
+.contact-left {
+    color: #fff;
+    margin-top: 10vh;
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next-product{
+        display: flex;
+        padding: 11px 33px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        background: #6225e6;
+        transition: 1s;
+        box-shadow: 6px 6px 0 black;
+        transform: skewX(-15deg);
+        border: none;
+        cursor: pointer;
+      }
+      
+.contact-right form {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-right form input,
+.contact-right form select,
+.contact-right form textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-right form button {
+    width: 49%;
+    padding: 10px;
+    background: rgb(174, 35, 41);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
