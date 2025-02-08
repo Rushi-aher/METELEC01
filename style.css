@@ -72,8 +72,8 @@ header {
 /* Section Headings */
 h2 {
     font-family: "TitlingGothicFB Comp", sans-serif;
-    font-weight: 500;
-    color: rgb(174, 35, 41);
+    font-weight: 000;
+    color: rgb(199, 69, 75);
     font-size: 56px;
     line-height: 64px;
     text-align: center;
@@ -119,18 +119,30 @@ video {
 
 /* Navigation Section */
 #quick-nav {
-    text-align: left;
-    padding: 20px 0;
+    text-align: center;
+    margin: 0px 0px 100px 0px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.quick-links ul {
+    text-transform: uppercase;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
 .quick-links a {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    color: rgb(205, 203, 203);
+    text-decoration: none;
+    color: rgb(23, 25, 43,0.8);
+    font-weight: bold;
 }
+
 .section3{
     background: url("./image/l1.jpg");
     background-size: cover;
